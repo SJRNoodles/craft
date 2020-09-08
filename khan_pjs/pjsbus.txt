@@ -1,0 +1,68 @@
+//PJS Bus By Johnel
+
+//Variables
+var x = 170;
+var game = 0;
+var Score = 0;
+
+// game over
+var gameover=function(){
+    fill(240, 240, 240);
+          textSize(50);
+          text("Game Over",80,200); 
+          textSize(20);
+          text("Press Restart to play again",85,220); 
+        };
+
+//Game
+draw = function() { 
+    Score +=1;
+    //background
+    textSize(40);
+    game=1;
+background(173, 145, 3);
+fill(0, 0, 0);
+rect(150,0,100,400);
+
+ fill(186, 44, 44);
+ 
+     game=0;
+     
+    //control
+    if (x>250){
+        game=1;
+    }else{
+        game = 0;
+    }
+    if (x<97){
+        game=1;
+    }
+    
+    
+    
+    if(game===0){
+        rect(x,150,50,100);
+        fill(92, 92, 92);
+    text(x, -4, 32);
+    fill(255, 255, 255);
+    text(x, 0, 30);
+     x-=0.2;
+        if(keyIsPressed && keyCode === RIGHT){
+    x+=2;
+    }
+    if(keyIsPressed && keyCode === LEFT){
+    x-=2;
+    }
+    }
+    
+    
+    
+    //Game over check
+    
+ 
+ 
+ 
+ if(game===1){
+        gameover();
+    }
+};
