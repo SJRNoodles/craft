@@ -18,6 +18,8 @@ Other rules
 2: Don't insert OC's. Seems a bit off.
 3: Don't put the characters in violent, political, or Not Safe for Work situations.
 4: The minimum panel number is 3. The maximum us 6.
+5: Don't insert anything from other franchises and games.
+6: Don't put Pokemon trainers inside comic strips. Pokeballs are also not allowed
 
 Character rules
 1: Make sure the characters act how they would
